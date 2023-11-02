@@ -1,0 +1,47 @@
+.container__egg {
+  width: 100%;
+  max-width: $value;
+  margin-top: 50px;
+  position: relative;
+}
+.bg__egg {
+  z-index: 0;
+}
+.container__content {
+  z-index: 1;
+
+  h3 {
+    position: absolute;
+    font-family: $font-openRegular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: $color_w;
+    letter-spacing: 6px;
+    top: 50px;
+    z-index: 2;
+  }
+}
+.container__content_main {
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.egg_pictures {
+  position: absolute;
+  top: 142px;
+  left: 7.4rem;
+  size: 475px;
+  display: block;
+}
+.egg__text {
+  width: 50%;
+  max-width: 600px;
+  position: absolute;
+  top: 142px;
+  right: 135px;
+  color: $color_w;
+}

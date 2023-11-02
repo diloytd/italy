@@ -1,0 +1,445 @@
+@font-face {
+  font-family: "Kurale", sans-serif;
+  src: url(assets/scss/components/fonts/Kurale-Regular.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Bold", sans-serif;
+  src: url(assets/scss/components/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Regular", sans-serif;
+  src: url(assets/scss/components/fonts/OpenSans-Regular.ttf);
+}
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "OpenSans-Regular";
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+section h2 {
+  text-align: center;
+  font-family: "Kurale", serif;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.3rem;
+  /* 114.286% */
+}
+
+section h3 {
+  text-align: center;
+  width: 100%;
+  /* Caption */
+  font-family: "OpenSans-Regular";
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.7rem; /* 116.667% */
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+section p {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5rem; /* 155.556% */
+}
+
+::selection {
+  color: rgb(255, 0, 179);
+  background: rgb(0, 255, 30);
+}
+
+.header {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header__bg {
+  max-width: 1440px;
+  position: relative;
+  min-height: 800px;
+  margin: 0 auto;
+}
+
+.header__img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.header__content {
+  position: absolute;
+  color: red;
+  font-family: "OpenSans-Bold";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header__list {
+  max-width: 1440px;
+  width: 80%;
+  margin: 2px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "OpenSans-Regular";
+}
+
+.header__nav-item {
+  margin: 0 auto;
+}
+
+a {
+  color: white;
+  display: block;
+  padding: 25px 0;
+  border-top: 3px solid transparent;
+}
+
+.header__nav-item a:hover {
+  color: #e8c300;
+  border-top: 3px solid #e8c300;
+}
+
+.header__center {
+  max-width: 1440px;
+  width: 100%;
+  margin: 6rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  color: white;
+  font-family: "OpenSans-Regular";
+  transform: rotate(270deg);
+}
+
+.header__main {
+  max-width: 52%;
+  text-align: center;
+}
+
+.header__main h6 {
+  color: white;
+  font-size: 1rem;
+}
+
+.header__main h1 {
+  font-size: 4rem;
+  color: #e8c300;
+  font-family: "Kurale", serif;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header__link {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__link a {
+  width: 11rem;
+  border: 1px solid grey;
+}
+.header__link a:hover {
+  background-color: #e8c300;
+  color: white;
+}
+
+.social-media {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-media-link {
+  height: 25px;
+}
+.social-media-link a:hover {
+  border-top: 1px solid transparent;
+}
+
+.restaurant {
+  background-color: aqua;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.restaurant__info {
+  margin-top: 25px;
+  width: 41%;
+  text-align: center;
+}
+
+.restaurant__article {
+  padding-bottom: 35px;
+  font-size: 1rem;
+  font-family: "OpenSans-Regular";
+  line-height: 1.5rem;
+}
+
+.restaurant__title {
+  font-size: 2.3rem;
+  font-family: "OpenSans-Regular";
+}
+
+.restaurant__article:nth-of-type(1) {
+  font-weight: 700;
+}
+
+.article-btn {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #e8c300;
+  width: 60px;
+}
+
+.comand {
+  max-width: 1440px;
+  width: 90%;
+  max-height: 675px;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.comand__bg {
+  z-index: -10;
+  position: relative;
+}
+
+.comand__tittle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: rgb(191, 28, 28);
+  z-index: 10;
+}
+
+.comand__info {
+  min-height: 450px;
+  position: absolute;
+  top: 10rem;
+  left: 5.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.comand__info-img {
+  width: 50%;
+}
+
+.comand__info-article {
+  width: 40%;
+  margin-right: 3rem;
+}
+
+.article-btn {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #e8c300;
+  width: 60px;
+}
+
+.comand {
+  color: white;
+}
+
+.comand h3 {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+}
+
+.form__container {
+  width: 1440px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form h2 {
+  color: #000;
+  text-align: center;
+  font-family: Kurale;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  padding-bottom: 59px;
+}
+
+.form__input {
+  width: 100%;
+  max-width: 565px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input {
+  width: 15rem;
+  height: 3.3rem;
+  background-color: rgb(229, 229, 229);
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+select {
+  width: 15rem;
+  box-sizing: border-box;
+  height: 3.3rem;
+  background-color: rgb(229, 229, 229);
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  margin: 5px;
+  padding-left: 10px;
+  position: relative;
+}
+
+select:valid {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+select option {
+  color: rgb(0, 0, 0);
+}
+
+input date:valid {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+input::placeholder {
+  padding-left: 15px;
+  color: rgba(51, 51, 51, 0.5);
+  box-sizing: border-box;
+}
+
+#date {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: rgba(51, 51, 51, 0.5);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.form__contact {
+  width: fit-content;
+  display: inline;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-size: 1.5rem;
+}
+.form__contact a {
+  color: rgba(51, 51, 51, 0.5);
+  display: inline;
+}
+.form__contact a:hover {
+  color: #e8c300;
+  visibility: hidden;
+}
+.form__contact a:focus {
+  background-image: url(assets/img/free-icon-phone-call-5585562.png);
+}
+
+.container__egg {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.bg__egg {
+  z-index: 0;
+}
+
+.container__content {
+  z-index: 1;
+}
+.container__content h3 {
+  position: absolute;
+  font-family: "OpenSans-Regular";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  letter-spacing: 6px;
+  top: 50px;
+  z-index: 2;
+}
+
+.container__content_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.egg_pictures {
+  position: absolute;
+  top: 142px;
+  left: 7.4rem;
+  size: 475px;
+  display: block;
+}
+
+.egg__text {
+  width: 50%;
+  max-width: 600px;
+  position: absolute;
+  top: 142px;
+  right: 135px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

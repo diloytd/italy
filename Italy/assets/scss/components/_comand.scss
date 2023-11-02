@@ -1,0 +1,50 @@
+.comand {
+  max-width: $value;
+  width: 90%;
+  max-height: 675px;
+  margin-top: 5rem;
+  position: relative;
+}
+.comand__bg {
+  z-index: -10;
+  position: relative;
+}
+
+.comand__tittle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  color: rgb(191, 28, 28);
+  z-index: 10;
+}
+.comand__info {
+  min-height: 450px;
+  position: absolute;
+  top: 10rem;
+  left: 5.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.comand__info-img {
+  width: 50%;
+}
+.comand__info-article {
+  width: 40%;
+
+  margin-right: 3rem;
+}
+
+.article-btn {
+  @include article-btn;
+}
+.comand {
+  color: $color_w;
+}
+.comand h3 {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+}

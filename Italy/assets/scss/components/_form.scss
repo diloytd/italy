@@ -1,0 +1,101 @@
+.form__container {
+  width: $value;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.form h2 {
+  color: $color_b;
+  text-align: center;
+  font-family: Kurale;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  padding-bottom: 59px;
+}
+
+.form__input {
+  width: 100%;
+  max-width: 565px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input {
+  width: 15rem;
+
+  height: 3.3rem;
+  background-color: $color_bl;
+  font-family: $font-openRegular;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+select {
+  width: 15rem;
+  box-sizing: border-box;
+  height: 3.3rem;
+  background-color: $color_bl;
+  font-family: $font-openRegular;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  margin: 5px;
+  padding-left: 10px;
+  position: relative;
+}
+
+select:valid {
+  color: $color_g;
+}
+
+select option {
+  color: rgb(0, 0, 0);
+}
+input date:valid {
+  color: $color_g;
+}
+
+input::placeholder {
+  padding-left: 15px;
+  color: $color_g;
+  box-sizing: border-box;
+}
+#date {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: $color_g;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+// input[type="date"] {
+//   background: url("../images/icon_calendar.svg") #f7f9fc no-repeat 90% 50%;
+// }
+.form__contact {
+  width: fit-content;
+  display: inline;
+  color: $color_g;
+  text-align: center;
+  font-family: $font-openRegular;
+  font-size: 1.5rem;
+
+  a {
+    color: $color_g;
+    display: inline;
+  }
+  a:hover {
+    color: $color_y;
+    visibility: hidden;
+  }
+  a:focus {
+    background-image: url(assets/img/free-icon-phone-call-5585562.png);
+  }
+}
